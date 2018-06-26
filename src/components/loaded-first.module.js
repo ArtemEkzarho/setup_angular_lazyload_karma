@@ -7,6 +7,7 @@ export const loadedFirst = angular
         template: '<h1>First lazy loaded module<h1>',
         controller: class loadedFirstComponent {
             constructor() {
+                this.testValue = 777;
                 console.log('First lazy loaded component is inited');
             }
         },
