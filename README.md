@@ -5,21 +5,4 @@
 
 For tests first you need to build application
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-for Nastya
+>for Nastya
