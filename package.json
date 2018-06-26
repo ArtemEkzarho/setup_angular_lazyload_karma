@@ -1,0 +1,41 @@
+{
+  "name": "setup_angular_lazyload_karma",
+  "version": "1.0.0",
+  "description": "demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemEkzarho/setup_angular_lazyload_karma.git"
+  },
+  "keywords": [
+    "angularjs"
+  ],
+  "author": "Ekzarkho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtemEkzarho/setup_angular_lazyload_karma/issues"
+  },
+  "homepage": "https://github.com/ArtemEkzarho/setup_angular_lazyload_karma#readme",
+  "dependencies": {
+    "angular": "^1.7.2",
+    "angular-ui-router": "^1.0.18",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "fast-async": "^6.3.7",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "ng-annotate-loader": "^0.6.1",
+    "ng-annotate-patched": "^1.7.0",
+    "oclazyload": "^1.1.0",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8"
+  }
+}
