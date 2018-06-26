@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "demo",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode development"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ArtemEkzarho/setup_angular_lazyload_karma.git"
@@ -20,8 +16,15 @@
     "url": "https://github.com/ArtemEkzarho/setup_angular_lazyload_karma/issues"
   },
   "homepage": "https://github.com/ArtemEkzarho/setup_angular_lazyload_karma#readme",
+  "scripts": {
+    "test-chrome": "./node_modules/.bin/karma start karma.conf.js --browsers Chrome",
+    "test-safari": "./node_modules/.bin/karma start karma.conf.js --browsers Safari",
+    "test-phantom": "./node_modules/.bin/karma start karma.conf.js --browsers PhantomJS",
+    "build": "webpack --mode development"
+  },
   "dependencies": {
     "angular": "^1.7.2",
+    "angular-mocks": "^1.7.2",
     "angular-ui-router": "^1.0.18",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
@@ -32,9 +35,19 @@
     "fast-async": "^6.3.7",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^2.0.0",
+    "karma-babel-preprocessor": "^7.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-safari-launcher": "^1.0.0",
+    "karma-spec-reporter": "0.0.31",
+    "karma-teamcity-reporter": "^1.0.1",
     "ng-annotate-loader": "^0.6.1",
     "ng-annotate-patched": "^1.7.0",
     "oclazyload": "^1.1.0",
+    "phantomjs-prebuilt": "^2.1.16",
     "webpack": "^4.12.1",
     "webpack-cli": "^3.0.8"
   }
