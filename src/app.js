@@ -7,6 +7,8 @@ import defaultFirst from './components/default-first.module';
 import defaultSecond from './components/default-second.module';
 import defaultThird from './components/default-third.module';
 
+import servicesModule from './services/dynamic-imports-for-tests.service';
+
 import config from './rout-config';
 
 export const AppModule = angular
@@ -15,6 +17,12 @@ export const AppModule = angular
         oclazyload,
         defaultFirst,
         defaultSecond,
-        defaultThird
+        defaultThird,
+        servicesModule
     ])
-    .config(config);
+    .config(config)
+    .run((dynamicImportsForTestsSrv) => {
+        'ngInject'
+        
+        dynamicImportsForTestsSrv.init();
+    });

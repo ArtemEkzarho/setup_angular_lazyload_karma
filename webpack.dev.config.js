@@ -6,12 +6,13 @@ module.exports = {
     entry: {
         app: './src/app.js'
     },
+    mode: 'development',
     devtool: 'source-map',
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
             template: './src/index.html'
-        }),
+        })
     ],
     output: {
         filename: '[name].js',

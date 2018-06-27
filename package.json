@@ -20,7 +20,8 @@
     "test-chrome": "./node_modules/.bin/karma start karma.conf.js --browsers Chrome",
     "test-safari": "./node_modules/.bin/karma start karma.conf.js --browsers Safari",
     "test-phantom": "./node_modules/.bin/karma start karma.conf.js --browsers PhantomJS",
-    "build": "webpack --mode development"
+    "build": "webpack --config webpack.dev.config.js --mode development",
+    "build-for-unit-tests": "webpack --config webpack.tests.config.js --mode development"
   },
   "dependencies": {
     "angular": "^1.7.2",
@@ -48,7 +49,9 @@
     "ng-annotate-patched": "^1.7.0",
     "oclazyload": "^1.1.0",
     "phantomjs-prebuilt": "^2.1.16",
+    "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.12.1",
-    "webpack-cli": "^3.0.8"
+    "webpack-cli": "^3.0.8",
+    "webpack-merge": "^4.1.3"
   }
 }
