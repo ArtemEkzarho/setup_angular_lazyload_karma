@@ -1,4 +1,4 @@
-# setup_angular_lazyload_karma
+# setup_angularjs_lazyload_karma
 
  - npm run build
  - npm run test-chrome
